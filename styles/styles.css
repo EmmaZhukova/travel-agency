@@ -1,0 +1,128 @@
+
+  .bg-img {
+    background-image: url("/images/img.jpeg.avif");
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav a {
+    float: left;
+    color: #dcd7d0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    word-break: break-all;
+  }
+  p {
+    text-align: center;
+    font-size: 30px;
+    word-break: break-all;
+  }
+  h4 {
+    text-align: left;
+    font-size: 30px;
+    word-break: break-all;
+  }
+  h5 {
+    text-align: left;
+    font-size: 20px;
+    word-break: break-all;
+  }
+  .row {
+    margin: 8px -16px;
+  }
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none;
+
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .content {
+    background-color:#dcd7d0;
+    padding: 10px;
+  }
+  .show {
+    display: block;
+  }
+  .btn {
+    display: inline-block;
+    background: #2f4156;
+    border: none;
+    color: #c8d9e6;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .btn:hover {
+    background-color: #ddd;
+  }
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+  img{
+    float:auto;
+    margin-right: 5px;
+    width: 15px;
+    height: auto;
+  }
+  h6 {
+    text-align: center;
+    font-size: 20px;
+    word-break: break-all;
+  }
+  footer {
+    background: #c8d9e6; 
+    padding: 10px; 
+    flex:1;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+   }
+    

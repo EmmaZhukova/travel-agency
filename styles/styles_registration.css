@@ -1,0 +1,233 @@
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+    height: 100%;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    color: #dcd7d0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: hsl(35, 15%, 84%);
+    color: black;
+  }
+  .column {
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color: grey;
+  }
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    word-break: break-all;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    word-break: break-all;
+  }
+  p {
+    text-align: center;
+    font-size: 30px;
+    word-break: break-all;
+  }
+  * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #2f4156;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity:1;
+}
+a {
+  color: #c8d9e9;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Окаймленная форма */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Входы полной ширины */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Установите стиль для всех кнопок */
+button {
+  background-color: #2f4156;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Добавить эффект наведения для кнопок */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Дополнительный стиль для кнопки отмены (красный) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #2f4156;
+}
+
+/* Добавить отступы для контейнеров */
+.container {
+  padding: 16px;
+}
+
+/* Текст "Забыли пароль" */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Измените стили для кнопки span и cancel на очень маленьких экранах */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полный рост */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант */
+  background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  padding-top: 60px;
+}
+
+/* Модальное Содержание/коробка */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% сверху и по центру */
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия */
+.close {
+  /* Расположите его в правом верхнем углу за пределами модели */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Кнопка закрытия при наведении курсора мыши */
+.close:hover,
+.close:focus {
+  color: #2f4156;
+  cursor: pointer;
+}
+
+/* Добавить анимация масштабирования */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+footer {
+  background: #c8d9e6; 
+  padding: 10px; 
+  flex:1;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+ }
